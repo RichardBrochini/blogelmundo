@@ -1,0 +1,40 @@
+body{
+	background-color: #000000;	
+}
+#conteudo {
+	position:absolute;
+	left:50%;
+	top:10px;
+	width:800px;
+	height:680px;
+	margin-left:-365px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #ffffff;	
+}
+a:ACTIVE,a:VISITED,a:LINK {
+	color:#0000FF;
+	text-decoration: none;
+}
+a:HOVER{
+	color:#0000FF;
+	text-decoration: underline;
+}
+.menu{
+	width:800px;
+}
+img{
+	border: none;
+}
+.rss{
+	padding-left: 90px;
+}
+#posts{
+	width:660px;
+}	
+#extra{
+	position:absolute;
+	right:0px;
+	top:110px;
+	height:570px;
+}

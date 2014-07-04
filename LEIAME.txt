@@ -1,0 +1,32 @@
+Motor de blog
+
+Esse motor de blog esta organizado da seguinte forma
+	pasta classe:   todas as classes que compoen o sistema
+	pasta template: todos os templates que as classes usam para gera as paginas de usuarios
+	
+	Dentro da pasta classe, existe um arquivo chamado "controllerADM.class.php", essa classe
+	é responsavel por fazer todo o fluxo de dados entre classe e interface.
+
+	O Arquivo "GerarHtml.class.php", é responsavel por pegar os dados passados pelo o controllerADM e integrar
+	com os templates, restornando a string compilado para o controllerADM
+	
+	O Arquivo "ajax.controller.php", que se encontra na raiz, faz o integração do arquivo "Ajax.class.js" com as classes php
+	,o arquivo "Ajax.class.js" esta dentro da pasta js na raiz.
+		
+	para configura a instalação do blog, mexer nas configurações de diretorio dentro de "config.php" que
+	esta na raiz, e dentro da classe "Config.class.php" que se encontra dentro da pasta classes.
+
+	
+obs: O diretorio e todos os subdiretorios devem ter permição de leitura e escrita.
+
+Descrição:
+	
+Esse motor se baseia na ideia de guardar os dados do usuario em pequenos arquivos xml,
+dentro da pasta de cada usuarios e gerar os arquivos htmls para a navegação dos usuarios no blog.
+
+o cadastro de novos usuarios é feito na index.html, depois de realizado é gerada uma pasta com
+o login do usuario aonde é possivel acessar o arquivo adm.php que mostrará o painel de controle
+para o usuario, eo index.html que mostrará a navegação do blog.
+
+esse motor foi testado e esta no ar nesse link:
+http://www.richard.brochini.com/projeto/blogelmundo/rick/index.html
